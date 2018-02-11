@@ -46,12 +46,24 @@ and `jfx319` as well as `mypassword` are your username and password
 
 To understand or customize these options, refer to [docker commands](https://www.linuxfoundation.org/blog/basic-commands-for-performing-docker-container-operations/) and the [rocker wiki](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image)
 
+Apparently on Windows OS, I had to [enable sharing](https://rominirani.com/docker-on-windows-mounting-host-directories-d96f3f056a2c) of the drive before I can mount folders from that drive (linux didn't require this, not sure about Mac OS). 
+
+#### Opening RStudio
 Now go to your browser and open your ip address or localhost: 
 ```
 127.0.0.1:8787
 ```
 
-When finished, make sure to save your work (if you didn't mount a local folder); and stop your container: 
+When finished, make sure to save your work (if you didn't mount a local folder).  
+And stop your container: 
 ```
+docker ps -a
 docker stop <container_id>
+```
+And/or discard containers or images that you don't want to keep on your harddrive: 
+```
+docker rm <container_id>
+
+docker images
+docker rmi <image_id>
 ```
