@@ -6,6 +6,6 @@ MAINTAINER jfx319 jfx319@virginia.edu
 RUN install2.r --error \
     -r 'http://cran.rstudio.com' \
     ggmap \
-	tidycensus \
+    tidycensus \
   && R -e "remotes::install_github('tidyverse/ggplot2')" \
   && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
