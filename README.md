@@ -54,6 +54,10 @@ Now go to your browser and open your ip address or localhost:
 127.0.0.1:8787
 ```
 
+#### Loading RMD to follow along with analysis
+File -> New Project -> Version Control -> Git -> Repository URL:   https://github.com/NathanCDay/data_dive.git
+
+### CLEAN UP
 When finished, make sure to save your work (if you didn't mount a local folder).  
 And stop your container: 
 ```
